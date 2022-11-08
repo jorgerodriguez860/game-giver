@@ -1,0 +1,12 @@
+.text {
+    text-align: center;
+}
+
+#subheader {
+    color: gray;
+    font-style: italic;
+}
+
+.gameCards {
+    justify-content: center;
+}

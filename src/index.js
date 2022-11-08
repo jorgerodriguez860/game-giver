@@ -1,17 +1,45 @@
+// -------------------------
+// Vanilla React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// -------------------------
+// Added functionality
+// ------------
+// to route
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// ------------
+// to use redux
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducer from './reducers/reducer';
+// -------------------------
+// Major components
+import PageLayout from './components/layout/PageLayout';
+import Home from './components/links/Home';
+import Friends from './components/links/Friends';
+import GivingProfile from './components/links/GivingProfile';
+import Support from './components/links/Support';
+// -------------------------
+// Styling
+import './css/index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const store = createStore(reducer)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(
+  // <React.StrictMode>
+    <Provider store={store}>
+      <Router>
+        <PageLayout>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/friends' element={<Friends />} />
+            <Route path='/giving' element={<GivingProfile />} />
+            <Route path='/support' element={<Support />} />
+          </Routes>
+        </PageLayout>
+      </Router>
+    </Provider>
+  // </React.StrictMode>
+);
