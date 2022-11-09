@@ -5,7 +5,7 @@ const GameCards = ({games}) => {
   return (
     <>
       {/* Use the code block below when ready for API info */}
-      {/* {games.map(gameObj => {
+      {games.map(gameObj => {
         return (
           <Card style={{ width: '18rem' }} key={gameObj.id}>
             <Card.Img variant="top" src={gameObj.background_image} />
@@ -18,9 +18,9 @@ const GameCards = ({games}) => {
               <Card.Text>Rating: {gameObj.rating}</Card.Text>
             </Card.Body>
           </Card>
-      )})} */}
+      )})}
 
-      {games.map(gameObj => {
+      {/* {games.map(gameObj => {
         return (
           <Card style={{ width: '18rem' }} key={gameObj.id}>
             <Card.Img variant="top" src={gameObj.cover} />
@@ -34,7 +34,7 @@ const GameCards = ({games}) => {
             </Card.Body>
           </Card>
         )
-      })}
+      })} */}
     </>
   )
 }
