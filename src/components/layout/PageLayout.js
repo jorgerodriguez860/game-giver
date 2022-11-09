@@ -19,11 +19,11 @@ const PageLayout = ({children}) => {
 
   // useEffect(() => {
   //   let gameData = [
-  //     {id: '123', cover: 'pic1', name: 'game1', released: 2022, rating: 7},
-  //     {id: '456', cover: 'pic2', name: 'game2', released: 2018, rating: 9},
-  //     {id: '789', cover: 'pic3', name: 'game3', released: 2015, rating: 8},
-  //     {id: '012', cover: 'pic4', name: 'game4', released: 2020, rating: 10},
-  //     {id: '345', cover: 'pic5', name: 'game5', released: 2019, rating: 8}
+  //     {id: '123', background_image: 'pic1', name: 'game1', released: 2022, rating: 7},
+  //     {id: '456', background_image: 'pic2', name: 'game2', released: 2018, rating: 9},
+  //     {id: '789', background_image: 'pic3', name: 'game3', released: 2015, rating: 8},
+  //     {id: '012', background_image: 'pic4', name: 'game4', released: 2020, rating: 10},
+  //     {id: '345', background_image: 'pic5', name: 'game5', released: 2019, rating: 8}
   //   ]
 
   //   dispatch(fillVault(gameData))
