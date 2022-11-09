@@ -18,7 +18,6 @@ import PageLayout from './components/layout/PageLayout';
 import Home from './components/links/Home';
 import Friends from './components/links/Friends';
 import GivingProfile from './components/links/GivingProfile';
-import Support from './components/links/Support';
 // -------------------------
 // Styling
 import './css/index.css';
@@ -36,7 +35,6 @@ root.render(
             <Route path='/' element={<Home />} />
             <Route path='/friends' element={<Friends />} />
             <Route path='/giving' element={<GivingProfile />} />
-            <Route path='/support' element={<Support />} />
           </Routes>
         </PageLayout>
       </Router>
